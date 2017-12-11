@@ -1,9 +1,10 @@
-﻿using System;
+﻿using AMDb.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace AMDb
 {
@@ -12,8 +13,8 @@ namespace AMDb
         public App()
         {
             InitializeComponent();
-
-            MainPage = new AMDb.MainPage();
+            MovieDBService server = new MovieDBService();
+            MainPage = new NavigationPage(new MainPage(server));
         }
 
         protected override void OnStart()

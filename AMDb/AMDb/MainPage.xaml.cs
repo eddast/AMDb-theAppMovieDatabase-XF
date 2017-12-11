@@ -6,23 +6,33 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using AMDb.Services;
 
+
 namespace AMDb
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        private MovieDBService _server;
+
+        public MainPage(MovieDBService server)
         {
             InitializeComponent();
+            this._server = server;
         }
 
         private async void MovieButton_Clicked(object sender, EventArgs e)
         {
-            MovieDBService server = new MovieDBService();
+            // Indicate background activity by enabling spinner
             this.LoadSpinner.IsRunning = true;
             this.LoadSpinner.IsVisible = true;
-            var firstMovieResult = await server.GetMovieListByTitleAsync(this.MovieEntry.Text);
-            this.MovieLabel.Text = firstMovieResult[0].title;
+
+            var movieList = await _server.GetMovieListByTitleAsync(this.MovieEntry.Text);
+            this.MovieLabel.Text = movieList[0].title;
+            await Navigation.PushAsync(new MovieList(movieList));
+
+            // Disable spinner and clear text after resolving request
             this.LoadSpinner.IsRunning = false;
+            this.LoadSpinner.IsVisible = false;
+            this.MovieEntry.Text = "";
         }
     }
 }
