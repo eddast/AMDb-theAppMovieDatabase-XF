@@ -18,7 +18,8 @@
                     Clicked="MovieButton_Clicked"/>
             <ActivityIndicator  x:Name="LoadSpinner"
                                 Color="DarkGray"
-                                IsRunning="false" />
+                                IsRunning="false"
+                                IsVisible="false"/>
             <Label  x:Name="MovieLabel"
                     FontSize="Medium"/>
         </StackLayout>

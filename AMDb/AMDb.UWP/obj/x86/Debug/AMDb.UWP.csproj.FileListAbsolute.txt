@@ -127,7 +127,14 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDbPCL.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\DM.MovieApi.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDbPCL.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\DM.MovieApi.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\DM.MovieApi.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Newtonsoft.Json.xml
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\obj\x86\Debug\AMDb.UWP.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\obj\x86\Debug\App.g.i.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\obj\x86\Debug\App.g.cs

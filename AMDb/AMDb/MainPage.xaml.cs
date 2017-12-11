@@ -19,6 +19,7 @@ namespace AMDb
         {
             MovieDBService server = new MovieDBService();
             this.LoadSpinner.IsRunning = true;
+            this.LoadSpinner.IsVisible = true;
             var firstMovieResult = await server.GetMovieListByTitleAsync(this.MovieEntry.Text);
             this.MovieLabel.Text = firstMovieResult[0].title;
             this.LoadSpinner.IsRunning = false;
