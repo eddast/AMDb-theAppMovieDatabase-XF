@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AMDb"
+             x:Class="AMDb.MainPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20,60,20,20"
+                     VerticalOptions="Start"
+                     Spacing="10">
+            <Label  Text="Enter words in a movie title: "
+                    HorizontalOptions="Start" />
+            <Entry  Margin="0,20,0,0"
+                    x:Name="MovieEntry"
+                    Placeholder="Name"/>
+            <Button x:Name="MovieButton"
+                    Text="Get Movie"
+                    BorderColor="Color.Gray"
+                    Clicked="MovieButton_Clicked"/>
+            <ActivityIndicator  x:Name="LoadSpinner"
+                                Color="DarkGray"
+                                IsRunning="false" />
+            <Label  x:Name="MovieLabel"
+                    FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

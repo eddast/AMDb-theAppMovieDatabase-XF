@@ -1,0 +1,2 @@
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\AMDb.UWP.csproj;x86
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\AMDb.csproj;neutral
