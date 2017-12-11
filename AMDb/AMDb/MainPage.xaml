@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AMDb"
-             x:Class="AMDb.MainPage">
+             x:Class="AMDb.MainPage"
+             Title="Movie Search">
     <ContentPage.Content>
         <StackLayout Margin="20,60,20,20"
                      VerticalOptions="Start"
