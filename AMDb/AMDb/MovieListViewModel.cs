@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMDb.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,11 +15,13 @@ namespace AMDb
         private INavigation _navigation;
         private List<MovieModel> _movies;
         private MovieModel _selectedMovie;
+        private MovieDBService _server;
 
-        public MovieListViewModel(INavigation navigation, List<MovieModel> movies)
+        public MovieListViewModel(INavigation navigation, List<MovieModel> movies, MovieDBService server)
         {
             this._navigation = navigation;
             this._movies = movies;
+            this._server = server;
         }
 
         public List<MovieModel> Movies
@@ -37,8 +40,11 @@ namespace AMDb
             get => this._selectedMovie;
             set {
                 if(value != null) {
+
                     this._selectedMovie = value;
-                    this._navigation.PushAsync((new MovieDetailPage(_selectedMovie)), true);
+                    this._navigation.PushAsync((new MovieDetailPage(_selectedMovie, _server)), true);
+                    _selectedMovie = null;
+                    OnPropertyChanged();
                 }
             }
         } 

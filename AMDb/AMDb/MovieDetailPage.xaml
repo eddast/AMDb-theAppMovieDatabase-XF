@@ -7,17 +7,23 @@
         <StackLayout VerticalOptions="Start"
                      Spacing="10">
             <Image x:Name="backdropImage"
-                   Source="{Binding backdropPath}"
+                   Source="{Binding Movie.backdropPath}"
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                    AbsoluteLayout.LayoutFlags="All"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"
                    Aspect="AspectFill"/>
-            <Label  Margin="20,10,0,10"
-                    Text="{Binding title}"
+            <Label  x:Name="titleAndYear"
+                    Text=""
+                    Margin="20,10,0,10"
                     FontSize="Medium"/>
-            <Label  Margin="20,0,0,10"
-                    Text="{Binding genres}"
+            <Label  x:Name="tagline"
+                    Margin="20,0,0,10"
+                    Text="{Binding Tagline}"
+                    FontSize="Small"/>
+                <Label  x:Name="details"
+                    Margin="20,0,0,10"
+                    Text="{Binding Runtime}"
                     FontSize="Small"/>
                 <Grid Padding="10,10"
                   RowSpacing="6">
@@ -26,10 +32,10 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Image  Margin="10,10,10,10"
-                            Source="{Binding posterPath}"/>
+                            Source="{Binding Movie.posterPath}"/>
                     <Label  Grid.Column="1"
                             Margin="10,10,10,10"
-                            Text="{Binding overview}"/>
+                            Text="{Binding Movie.overview}"/>
                 </Grid>
             </StackLayout>
         </ScrollView>

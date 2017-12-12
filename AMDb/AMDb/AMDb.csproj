@@ -44,6 +44,7 @@
     <Compile Include="MovieDetailPage.xaml.cs">
       <DependentUpon>MovieDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MovieDetailViewModel.cs" />
     <Compile Include="MovieList.xaml.cs">
       <DependentUpon>MovieList.xaml</DependentUpon>
     </Compile>

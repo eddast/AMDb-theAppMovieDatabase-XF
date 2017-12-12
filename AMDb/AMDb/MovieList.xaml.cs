@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMDb.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace AMDb
 {
     public partial class MovieList : ContentPage {
 
-        public MovieList(List<MovieModel> movieList)
+        public MovieList(List<MovieModel> movieList, MovieDBService server)
         {
-            this.BindingContext = new MovieListViewModel(this.Navigation, movieList);
+            this.BindingContext = new MovieListViewModel(this.Navigation, movieList, server);
             InitializeComponent();
         }
     }

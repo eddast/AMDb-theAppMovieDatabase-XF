@@ -28,10 +28,10 @@
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="1"
+                            <Label x:Name="titleAndYear"
+                                   Grid.Column="1"
                                    Text ="{Binding title}"
-                                   FontSize="Medium"
-                                   TextColor="#000000" />
+                                   FontSize="Medium"/>
                             <Image Source="{Binding posterPath}"/>
                         </Grid>
                     </ViewCell>
