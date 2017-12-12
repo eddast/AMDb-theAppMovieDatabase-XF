@@ -51,15 +51,6 @@ namespace AMDb
             }
         }
 
-        /*public string LengthAndGenres
-        {
-            get => this.Runtime + " | " + _movie.genres;
-            set {
-                this.LengthAndGenres = value;
-                OnPropertyChanged();
-            }
-        }*/
-
         public async Task UpdateMovieInformationAsync()
         {
             await UpdateRuntimeAsync();

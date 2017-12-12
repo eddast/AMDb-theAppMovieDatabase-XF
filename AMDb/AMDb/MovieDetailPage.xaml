@@ -23,7 +23,7 @@
                     FontSize="Small"/>
                 <Label  x:Name="details"
                     Margin="20,0,0,10"
-                    Text="{Binding Runtime}"
+                    Text="{Binding LengthAndGenres}"
                     FontSize="Small"/>
                 <Grid Padding="10,10"
                   RowSpacing="6">

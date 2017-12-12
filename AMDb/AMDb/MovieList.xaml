@@ -7,7 +7,7 @@
         <ListView x:Name="ListView"
                   HasUnevenRows="True"
                   ItemsSource="{Binding Movies}"
-                  SelectedItem="{Binding SelectedMovie}">
+                  SelectedItem="{Binding SelectedMovie, Mode=TwoWay}">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
                     <On Platform="iOS">80</On>
