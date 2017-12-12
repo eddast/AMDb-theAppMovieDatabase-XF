@@ -47,3 +47,15 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\res\values\styles.xml
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\R.cs.flag
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\uploadflags.txt
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\bin\Debug\AMDb.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\bin\Debug\AMDb.Android.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\bin\Debug\AMDbPCL.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\bin\Debug\DM.MovieApi.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\AMDb.Android.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\AMDb.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\AMDbPCL.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\DM.MovieApi.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb

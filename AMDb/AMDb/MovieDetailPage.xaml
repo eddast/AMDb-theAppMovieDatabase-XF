@@ -4,20 +4,34 @@
              x:Class="AMDb.MovieDetailPage">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Margin="0,60,0,0"
-                     VerticalOptions="Start"
+        <StackLayout VerticalOptions="Start"
                      Spacing="10">
             <Image x:Name="backdropImage"
-                   Source="{Binding fullBackdropPath}"
+                   Source="{Binding backdropPath}"
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                    AbsoluteLayout.LayoutFlags="All"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"
                    Aspect="AspectFill"/>
-            <Label  Text="{Binding title}"/>
-            <Label  Text="{Binding genres}"/>
-            <Label  Text="{Binding overview}"/>
-        </StackLayout>
+            <Label  Margin="20,10,0,10"
+                    Text="{Binding title}"
+                    FontSize="Medium"/>
+            <Label  Margin="20,0,0,10"
+                    Text="{Binding genres}"
+                    FontSize="Small"/>
+                <Grid Padding="10,10"
+                  RowSpacing="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  Margin="10,10,10,10"
+                            Source="{Binding posterPath}"/>
+                    <Label  Grid.Column="1"
+                            Margin="10,10,10,10"
+                            Text="{Binding overview}"/>
+                </Grid>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

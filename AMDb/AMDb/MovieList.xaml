@@ -28,14 +28,11 @@
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Row="0"
-                                   Grid.Column="1"
-                                   Text="{Binding title}"
+                            <Label Grid.Column="1"
+                                   Text ="{Binding title}"
                                    FontSize="Medium"
                                    TextColor="#000000" />
-                            <Image Grid.Row="0"
-                                   Grid.Column="0"
-                                   Source="{Binding fullPosterPath}"/>
+                            <Image Source="{Binding posterPath}"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
