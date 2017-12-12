@@ -18,8 +18,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10,10"
-                              RowSpacing="6">
+                        <Grid Padding="10,10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="Auto"/>
@@ -28,11 +27,15 @@
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label x:Name="titleAndYear"
-                                   Grid.Column="1"
+                            <Image Source="{Binding posterPath}"/>
+                            <StackLayout Grid.Column="1">
+                                <Label x:Name="titleAndYear"
                                    Text ="{Binding title}"
                                    FontSize="Medium"/>
-                            <Image Source="{Binding posterPath}"/>
+                                <Label x:Name="cast"
+                                   Text ="{Binding cast}"
+                                   FontSize="Small"/>
+                            </StackLayout>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
