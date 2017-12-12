@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-11T18:09:59.933</Modified>
+      <Modified>2017-12-12T13:45:30.251</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe">
       <PackagePath>entrypoint\AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-11T18:20:43.134</Modified>
+      <Modified>2017-12-12T13:45:29.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,11 +513,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\bin\Debug\AMDb.dll">
       <PackagePath>AMDb.dll</PackagePath>
-      <Modified>2017-12-11T18:42:03.511</Modified>
+      <Modified>2017-12-12T13:45:28.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\bin\Debug\AMDbPCL.dll">
       <PackagePath>AMDbPCL.dll</PackagePath>
-      <Modified>2017-12-11T18:39:38.364</Modified>
+      <Modified>2017-12-12T13:34:18.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\bin\Debug\DM.MovieApi.dll">
       <PackagePath>DM.MovieApi.dll</PackagePath>
@@ -683,7 +683,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.xr.xml">
       <PackagePath>AMDb.UWP.xr.xml</PackagePath>
-      <Modified>2017-12-11T10:38:26.587</Modified>
+      <Modified>2017-12-12T13:14:56.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -700,11 +700,11 @@
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-11T14:00:49.433</Modified>
+      <Modified>2017-12-12T13:15:00.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe">
       <PackagePath>AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-11T18:09:59.924</Modified>
+      <Modified>2017-12-12T13:45:30.248</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -25,8 +25,11 @@ namespace AMDb
             this.LoadSpinner.IsRunning = true;
             this.LoadSpinner.IsVisible = true;
 
-            var movieList = await _server.GetBasicMovieInfoByTitleAsync(this.MovieEntry.Text);
-            if (movieList.Count != 0 ) await Navigation.PushAsync(new MovieList(movieList));
+            if (MovieEntry.Text != null && MovieEntry.Text != "") {
+
+                var movieList = await _server.GetBasicMovieInfoByTitleAsync(this.MovieEntry.Text);
+                await Navigation.PushAsync(new MovieList(movieList));
+            } else { /* TODO */ }
 
             // Disable spinner and clear text after resolving request
             this.LoadSpinner.IsRunning = false;
