@@ -1,29 +1,33 @@
-﻿using System;
+﻿using AMDb.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using AMDb.Services;
-
+using Xamarin.Forms.Xaml;
 
 namespace AMDb
 {
     public partial class PopularMoviesPage: ContentPage
     {
+        private MovieListViewModel _thisViewModel;
         private MovieDBService _server;
+        List<MovieModel> popularMovies;
 
         public PopularMoviesPage(MovieDBService server)
         {
             InitializeComponent();
             this._server = server;
+            FillList();
         }
 
-        protected override async void OnAppearing()
+        private async void FillList()
         {
-            base.OnAppearing();
-            await _server.GetBasicTopMoviesInfoAsync();
-
+            popularMovies = await _server.GetPopularMoviesInfoAsync();
+            _thisViewModel = new MovieListViewModel(this.Navigation, popularMovies, _server);
+            this.BindingContext = _thisViewModel;
+            _thisViewModel.UpdateMovieCast();
         }
     }
 }

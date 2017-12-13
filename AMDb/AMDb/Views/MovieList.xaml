@@ -2,43 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AMDb.MovieList"
+             xmlns:control="clr-namespace:AMDb"
              Title="Movie List">
-    <ContentPage.Content>
-        <ListView x:Name="ListView"
-                  HasUnevenRows="True"
-                  ItemsSource="{Binding Movies, Mode=TwoWay}"
-                  SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
-                  RowHeight="200">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="3,10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="65"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Image Source="{Binding PosterPath}"/>
-                            <StackLayout Grid.Column="1"
-                                         Margin="10,20,10,10">
-                                <Label x:Name="titleAndYear"
-                                       Text ="{Binding Title}"
-                                       FontSize="24"
-                                       TextColor="DimGray"
-                                       FontAttributes="Bold"/>
-                                <Label x:Name="cast"
-                                   Text ="{Binding Cast}"
-                                   FontSize="17"
-                                   TextColor="LightSlateGray"
-                                   FontAttributes="Italic"/>
-                            </StackLayout>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+    <control:MovieListContentView />
 </ContentPage>
