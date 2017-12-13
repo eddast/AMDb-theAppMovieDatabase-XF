@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMDb.UWP", "AMDb\AMDb.UWP\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMDb.iOS", "AMDb\AMDb.iOS\AMDb.iOS.csproj", "{419E2EF5-7E9F-4BFB-9389-D2A8E0F329ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMDbPCL", "..\..\..\..\Desktop\T-488-MAPP-master\T-488-MAPP-master\Projects\Week 2 - Android\IOSWeek1\IOSWeek1\AMDbPCL.csproj", "{5FD40872-09FC-46C4-892D-084C419EE126}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMDbPCL", "AMDb\IOSWeek1\AMDbPCL.csproj", "{5FD40872-09FC-46C4-892D-084C419EE126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

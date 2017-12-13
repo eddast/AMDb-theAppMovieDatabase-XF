@@ -20,46 +20,51 @@ namespace AMDb.Services
         }
 
         // Returns movie model list with appropriate info searhing by title substring
-        public async System.Threading.Tasks.Task<List<MovieModel>> GetMovieListByTitleAsync(string title)
+        public async System.Threading.Tasks.Task<List<MovieModel>> GetBasicMovieInfoByTitleAsync(string title)
         {
             // Conduct query and await response
             // If query returns no result, movieList becomes a null list
             ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(title);
             IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-            List<MovieModel> movieList = await getMovieModelListByMovieInfoAsync(movieInfoList);
+            List<MovieModel> movieList = _GetMovieModelListByMovieInfo(movieInfoList);
 
 
             return movieList;
         }
 
-        public async System.Threading.Tasks.Task<List<MovieModel>> GetTopMoviesViewAsync()
+        public async System.Threading.Tasks.Task<List<MovieModel>> GetBasicTopMoviesInfoAsync()
         {
             // Conduct query and await response
             // If query returns no result, movieList becomes a null list
             var response_m = await _movieApi.GetTopRatedAsync();
             IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-            List<MovieModel> movieModelList = await getMovieModelListByMovieInfoAsync(movieInfoList);
+            List<MovieModel> movieModelList = _GetMovieModelListByMovieInfo(movieInfoList);
+
+
+            return movieModelList;
+        }
+
+        public async System.Threading.Tasks.Task<List<MovieModel>> GetPopularMoviesInfoAsync()
+        {
+            // Conduct query and await response
+            // If query returns no result, movieList becomes a null list
+            var response_m = await _movieApi.GetPopularAsync();
+            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
+            List<MovieModel> movieModelList = _GetMovieModelListByMovieInfo(movieInfoList);
 
 
             return movieModelList;
         }
 
         // retrieves movie model information from movie info
-        private async System.Threading.Tasks.Task<List<MovieModel>> getMovieModelListByMovieInfoAsync(IReadOnlyList<MovieInfo> movieInfoList)
+        private List<MovieModel> _GetMovieModelListByMovieInfo(IReadOnlyList<MovieInfo> movieInfoList)
         {
             List<MovieModel> movieModelList = new List<MovieModel>();
 
             foreach (MovieInfo movie in movieInfoList) {
 
-                // Get poster path, starring cast and movie runtime
-                // Then create a model with those values and add it to list
-                //var localFilePath = await DownloadPosterAsync(movie.PosterPath);
-                //var localFilePathBackdrop = await DownloadPosterAsync(movie.BackdropPath);
-                var movieCast = await GetThreeCastMembersAsync(movie.Id);
-                var runtime = await GetRuntimeAsync(movie.Id);
-
-                MovieModel movieModel = new MovieModel(movie, movieCast, runtime);
-                movieModelList.Add(movieModel);
+                // Then create a model with movieInfo value and add it to list
+                movieModelList.Add(new MovieModel(movie));
             }
 
 
@@ -67,7 +72,7 @@ namespace AMDb.Services
         }
 
         // Extract three starring actors from MovieCredit object by movie ID
-        private async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)
+        public async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)
         {
             ApiQueryResponse<MovieCredit> responseCast = await _movieApi.GetCreditsAsync(id);
             string movieCast = "";
@@ -84,13 +89,23 @@ namespace AMDb.Services
         }
 
         // Extract movie runtime from Movie object by movie ID
-        private async System.Threading.Tasks.Task<string> GetRuntimeAsync(int id)
+        public async System.Threading.Tasks.Task<string> GetRuntimeAsync(int id)
         {
             ApiQueryResponse<Movie> tm_movie = await _movieApi.FindByIdAsync(id);
             string runtime = tm_movie.Item.Runtime.ToString();
 
 
             return runtime;
+        }
+
+        // Extract movie runtime from Movie object by movie ID
+        public async System.Threading.Tasks.Task<string> GetTaglineAsync(int id)
+        {
+            var tm_movie = await _movieApi.FindByIdAsync(id);
+            string tagline = tm_movie.Item.Tagline;
+
+
+            return tagline;
         }
     }
 }
