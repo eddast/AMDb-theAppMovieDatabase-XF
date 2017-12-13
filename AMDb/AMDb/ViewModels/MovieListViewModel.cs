@@ -20,22 +20,24 @@ namespace AMDb
         {
             this._navigation = navigation;
             this._server = server;
-            if (movies != null) { this._movies = new ObservableCollection<MovieModel>(movies); }
-            else { GetListAsync(ListType); }
+            GetListAsync(movies, ListType);
         }
 
-        private async void GetListAsync(int listType)
+        private async void GetListAsync(List<MovieModel> movies, int listType)
         {
-            if (listType == 1)
-            {
+            if(movies != null ) {
+                _movies = new ObservableCollection<MovieModel>(movies);
+            }
+            else if (listType == 1) {
                 var MovieModelList = await _server.GetBasicTopMoviesInfoAsync();
                 Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }
-            else if (listType == 2)
-            {
+            else if (listType == 2) {
                 var MovieModelList = await _server.GetPopularMoviesInfoAsync();
                 Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }
+
+            UpdateMovieCast();
         }
 
         public ObservableCollection<MovieModel> Movies
@@ -49,7 +51,7 @@ namespace AMDb
 
         public async Task UpdateMovieCast()
         {
-            foreach(var movie in _movies) {
+            foreach (var movie in _movies) {
                 movie.Cast = await _server.GetThreeCastMembersAsync(movie.Id);
             }
 

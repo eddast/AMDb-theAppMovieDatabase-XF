@@ -11,6 +11,7 @@ namespace AMDb
 {
     public partial class PopularMoviesPage: ContentPage
     {
+
         public PopularMoviesPage(MovieDBService server)
         {
             InitializeComponent();
