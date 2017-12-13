@@ -7,14 +7,8 @@
         <ListView x:Name="ListView"
                   HasUnevenRows="True"
                   ItemsSource="{Binding Movies, Mode=TwoWay}"
-                  SelectedItem="{Binding SelectedMovie, Mode=TwoWay}">
-            <ListView.RowHeight>
-                <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS">200</On>
-                    <On Platform="Android">200</On>
-                    <On Platform="UWP">200</On>
-                </OnPlatform>
-            </ListView.RowHeight>
+                  SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
+                  RowHeight="200">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -24,17 +18,22 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="65"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding posterPath}"/>
-                            <StackLayout Grid.Column="1">
+                            <StackLayout Grid.Column="1"
+                                         Margin="10,20,10,10">
                                 <Label x:Name="titleAndYear"
-                                   Text ="{Binding title}"
-                                   FontSize="Medium"/>
+                                       Text ="{Binding title}"
+                                       FontSize="24"
+                                       TextColor="DimGray"
+                                       FontAttributes="Bold"/>
                                 <Label x:Name="cast"
                                    Text ="{Binding cast}"
-                                   FontSize="Small"/>
+                                   FontSize="17"
+                                   TextColor="LightSlateGray"
+                                   FontAttributes="Italic"/>
                             </StackLayout>
                         </Grid>
                     </ViewCell>
