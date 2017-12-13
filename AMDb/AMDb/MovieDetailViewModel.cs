@@ -26,8 +26,7 @@ namespace AMDb
         public MovieModel Movie
         {
             get => this._movie;
-            set
-            {
+            set {
                 this._movie = value;
                 OnPropertyChanged();
             }

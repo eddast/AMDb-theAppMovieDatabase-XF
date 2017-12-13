@@ -1,10 +1,8 @@
 ﻿using AMDb.Services;
-using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -13,18 +11,18 @@ namespace AMDb
     public class MovieListViewModel : INotifyPropertyChanged
     {
         private INavigation _navigation;
-        private List<MovieModel> _movies;
+        private ObservableCollection<MovieModel> _movies;
         private MovieModel _selectedMovie;
         private MovieDBService _server;
 
         public MovieListViewModel(INavigation navigation, List<MovieModel> movies, MovieDBService server)
         {
             this._navigation = navigation;
-            this._movies = movies;
+            this._movies = new ObservableCollection<MovieModel>(movies);
             this._server = server;
         }
 
-        public List<MovieModel> Movies
+        public ObservableCollection<MovieModel> Movies
         {
             get => this._movies; 
             set {
@@ -33,6 +31,14 @@ namespace AMDb
             }
         }
 
+        public async Task UpdateMovieCast()
+        {
+            foreach(var movie in _movies) {
+                movie.cast = await _server.GetThreeCastMembersAsync(movie.id);
+                Movies = _movies;
+            }
+
+        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         public MovieModel SelectedMovie
@@ -47,8 +53,8 @@ namespace AMDb
                     OnPropertyChanged();
                 }
             }
-        } 
-  
+        }
+
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

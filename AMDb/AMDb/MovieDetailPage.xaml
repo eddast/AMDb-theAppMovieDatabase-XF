@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AMDb.MovieDetailPage">
+             x:Class="AMDb.MovieDetailPage"
+             Title="Movie Information">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout VerticalOptions="Start"
-                     Spacing="10">
+                     Spacing="5">
             <Image x:Name="backdropImage"
                    Source="{Binding Movie.backdropPath}"
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
@@ -15,27 +16,35 @@
                    Aspect="AspectFill"/>
             <Label  x:Name="titleAndYear"
                     Text=""
-                    Margin="20,10,0,10"
-                    FontSize="Medium"/>
-            <Label  x:Name="tagline"
-                    Margin="20,0,0,10"
-                    Text="{Binding Tagline}"
-                    FontSize="Small"/>
-                <Label  x:Name="details"
-                    Margin="20,0,0,10"
-                    Text="{Binding LengthAndGenres}"
-                    FontSize="Small"/>
-                <Grid Padding="10,10"
+                    Margin="20,10,20,10"
+                    FontSize="35"
+                    FontAttributes="Bold"/>
+            <Label  x:Name="details"
+                    Margin="20,0,20,10"
+                    Text=""
+                    FontSize="14"
+                    TextColor="LightSlateGray"/>
+            <BoxView Color="LightGray"
+                     Margin="20,0,20,0"
+                     HeightRequest="1"
+                     HorizontalOptions="FillAndExpand">
+            </BoxView>
+            <Grid Padding="10,5"
                   RowSpacing="6">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="130"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image  Margin="10,10,10,10"
+                    <Image  Margin="10,10,0,10"
                             Source="{Binding Movie.posterPath}"/>
-                    <Label  Grid.Column="1"
-                            Margin="10,10,10,10"
-                            Text="{Binding Movie.overview}"/>
+                    <StackLayout Grid.Column="1"
+                                 Margin="10,10,0,10">
+                        <Label  Text="{Binding Tagline}"
+                                FontSize="16"
+                                TextColor="DimGray"
+                                FontAttributes="Bold"/>
+                        <Label Text="{Binding Movie.overview}"/>
+                    </StackLayout>
                 </Grid>
             </StackLayout>
         </ScrollView>

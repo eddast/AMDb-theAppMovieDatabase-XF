@@ -6,19 +6,19 @@
     <ContentPage.Content>
         <ListView x:Name="ListView"
                   HasUnevenRows="True"
-                  ItemsSource="{Binding Movies}"
+                  ItemsSource="{Binding Movies, Mode=TwoWay}"
                   SelectedItem="{Binding SelectedMovie, Mode=TwoWay}">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS">80</On>
-                    <On Platform="Android">80</On>
-                    <On Platform="UWP">150</On>
+                    <On Platform="iOS">200</On>
+                    <On Platform="Android">200</On>
+                    <On Platform="UWP">200</On>
                 </OnPlatform>
             </ListView.RowHeight>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10,10">
+                        <Grid Padding="3,10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="Auto"/>
