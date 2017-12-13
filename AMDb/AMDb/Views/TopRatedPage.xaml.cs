@@ -15,7 +15,7 @@ namespace AMDb
         public TopRatedPage(MovieDBService server)
         {
             InitializeComponent();
-            //this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 1);
+            this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 1);
         }
     }
 }

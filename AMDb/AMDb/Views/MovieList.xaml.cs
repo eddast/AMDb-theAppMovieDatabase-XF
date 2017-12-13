@@ -9,8 +9,8 @@ using Xamarin.Forms.Xaml;
 
 namespace AMDb
 {
-    public partial class MovieList : ContentPage {
-
+    public partial class MovieList : ContentPage
+    {
         public MovieList(List<MovieModel> movieList, MovieDBService server)
         {
             InitializeComponent();
