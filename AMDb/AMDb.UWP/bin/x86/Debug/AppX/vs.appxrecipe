@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T00:12:01.274</Modified>
+      <Modified>2017-12-13T00:28:21.524</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe">
       <PackagePath>entrypoint\AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T00:11:59.759</Modified>
+      <Modified>2017-12-13T00:28:20.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,7 +513,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\bin\Debug\AMDb.dll">
       <PackagePath>AMDb.dll</PackagePath>
-      <Modified>2017-12-13T00:10:46.769</Modified>
+      <Modified>2017-12-13T00:28:18.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb\bin\Debug\AMDbPCL.dll">
       <PackagePath>AMDbPCL.dll</PackagePath>
@@ -704,7 +704,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\AMDbSolution - Copy\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe">
       <PackagePath>AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T00:12:01.266</Modified>
+      <Modified>2017-12-13T00:28:21.518</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
