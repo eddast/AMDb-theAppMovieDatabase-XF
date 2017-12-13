@@ -22,7 +22,8 @@
                         FontAttributes="Italic"/>
                 <Entry  Margin="20,20,20,0"
                         x:Name="MovieEntry"
-                        Placeholder="Name"/>
+                        Placeholder="Name"
+                        Text="{Binding Query}"/>
                 <Button x:Name="MovieButton"
                         Margin="50,30,50,0"
                         Text="Get Movie"
@@ -30,13 +31,14 @@
                         FontAttributes="Bold"
                         FontSize="20"
                         BackgroundColor="DeepSkyBlue"
-                        Clicked="MovieButton_Clicked"
+                        Command="{Binding SearchCommand}"
+                        IsEnabled="{Binding ButtonClickable}"
                         HeightRequest="60" WidthRequest="60"
                         MinimumHeightRequest="40" MinimumWidthRequest="40"/>
                 <ActivityIndicator  x:Name="LoadSpinner"
                                     Color="DarkGray"
-                                    IsRunning="false"
-                                    IsVisible="false"/>
+                                    IsRunning="{Binding IsSearching}"
+                                    IsVisible="{Binding IsSearching}"/>
                 <Label  x:Name="MovieLabel"
                         FontSize="Medium"/>
         </StackLayout>
