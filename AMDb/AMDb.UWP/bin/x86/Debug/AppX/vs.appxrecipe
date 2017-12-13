@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T13:15:40.712</Modified>
+      <Modified>2017-12-13T13:35:53.015</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe">
       <PackagePath>entrypoint\AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T13:15:39.928</Modified>
+      <Modified>2017-12-13T13:35:48.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,19 +513,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDb.dll">
       <PackagePath>AMDb.dll</PackagePath>
-      <Modified>2017-12-13T13:15:38.067</Modified>
+      <Modified>2017-12-13T13:35:44.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDbPCL.dll">
       <PackagePath>AMDbPCL.dll</PackagePath>
-      <Modified>2017-12-13T12:35:42.903</Modified>
+      <Modified>2017-12-13T13:35:44.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\DM.MovieApi.dll">
       <PackagePath>DM.MovieApi.dll</PackagePath>
-      <Modified>2017-12-08T23:56:31.000</Modified>
+      <Modified>2017-12-13T12:01:01.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2017-12-08T23:56:31.000</Modified>
+      <Modified>2017-12-13T12:01:01.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -700,11 +700,11 @@
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T12:35:50.361</Modified>
+      <Modified>2017-12-13T13:35:52.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe">
       <PackagePath>AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T13:15:40.709</Modified>
+      <Modified>2017-12-13T13:35:53.006</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
