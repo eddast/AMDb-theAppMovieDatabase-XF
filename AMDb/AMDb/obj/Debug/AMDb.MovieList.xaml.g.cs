@@ -11,8 +11,8 @@
 namespace AMDb {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\" +
-        "AMDb\\AMDb\\MovieList.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-F" +
+        "orms\\AMDb\\AMDb\\MovieList.xaml")]
     public partial class MovieList : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -34,18 +34,18 @@ namespace AMDb
 
         public string Runtime
         {
-            get => this._movie.runtime;
+            get => this._movie.Runtime;
             set {
-                this._movie.runtime = value;
+                this._movie.Runtime = value;
                 OnPropertyChanged();
             }
         }
 
         public string Tagline
         {
-            get => this._movie.tagline;
+            get => this._movie.Tagline;
             set {
-                this._movie.tagline = value;
+                this._movie.Tagline = value;
                 OnPropertyChanged();
             }
         }
@@ -58,14 +58,14 @@ namespace AMDb
 
         private async Task UpdateRuntimeAsync()
         {
-            var movieRuntime = await _server.GetRuntimeAsync(_movie.id);
-            Movie.runtime = movieRuntime;
+            var movieRuntime = await _server.GetRuntimeAsync(_movie.Id);
+            Movie.Runtime = movieRuntime;
             Runtime = movieRuntime;
         }
 
         private async Task UpdateTaglineAsync()
         {
-            var movieTagline = "\"" + await _server.GetTaglineAsync(_movie.id) + "\"";
+            var movieTagline = "\"" + await _server.GetTaglineAsync(_movie.Id) + "\"";
             Tagline = movieTagline;
         }
 

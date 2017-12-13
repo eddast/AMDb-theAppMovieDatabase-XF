@@ -22319,16 +22319,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\AMDb\\AMDb.UWP\\AMDb.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-Forms\\AMDb\\AMDb.UWP\\AMDb.UWP.csproj",
       "projectName": "AMDb.UWP",
-      "projectPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\AMDb\\AMDb.UWP\\AMDb.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\AMDb\\AMDb.UWP\\project.json",
+      "projectPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-Forms\\AMDb\\AMDb.UWP\\AMDb.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-Forms\\AMDb\\AMDb.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\AMDb\\AMDb\\AMDb.csproj": {
-              "projectPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\AMDbSolution - Copy\\AMDb\\AMDb\\AMDb.csproj"
+            "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-Forms\\AMDb\\AMDb\\AMDb.csproj": {
+              "projectPath": "C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-Forms\\AMDb\\AMDb\\AMDb.csproj"
             }
           }
         }

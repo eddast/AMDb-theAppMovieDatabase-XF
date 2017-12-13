@@ -34,7 +34,7 @@ namespace AMDb
         public async Task UpdateMovieCast()
         {
             foreach(var movie in _movies) {
-                movie.cast = await _server.GetThreeCastMembersAsync(movie.id);
+                movie.Cast = await _server.GetThreeCastMembersAsync(movie.Id);
                 Movies = _movies;
             }
 

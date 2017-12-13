@@ -8,7 +8,7 @@
         <StackLayout VerticalOptions="Start"
                      Spacing="5">
             <Image x:Name="backdropImage"
-                   Source="{Binding Movie.backdropPath}"
+                   Source="{Binding Movie.BackdropPath}"
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                    AbsoluteLayout.LayoutFlags="All"
                    HorizontalOptions="FillAndExpand"
@@ -36,14 +36,14 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Image  Margin="10,10,0,10"
-                            Source="{Binding Movie.posterPath}"/>
+                            Source="{Binding Movie.PosterPath}"/>
                     <StackLayout Grid.Column="1"
                                  Margin="10,10,0,10">
                         <Label  Text="{Binding Tagline}"
                                 FontSize="16"
                                 TextColor="DimGray"
                                 FontAttributes="Bold"/>
-                        <Label Text="{Binding Movie.overview}"/>
+                        <Label Text="{Binding Movie.Overview}"/>
                     </StackLayout>
                 </Grid>
             </StackLayout>

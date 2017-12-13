@@ -21,16 +21,16 @@
                                 <ColumnDefinition Width="65"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="{Binding posterPath}"/>
+                            <Image Source="{Binding PosterPath}"/>
                             <StackLayout Grid.Column="1"
                                          Margin="10,20,10,10">
                                 <Label x:Name="titleAndYear"
-                                       Text ="{Binding title}"
+                                       Text ="{Binding Title}"
                                        FontSize="24"
                                        TextColor="DimGray"
                                        FontAttributes="Bold"/>
                                 <Label x:Name="cast"
-                                   Text ="{Binding cast}"
+                                   Text ="{Binding Cast}"
                                    FontSize="17"
                                    TextColor="LightSlateGray"
                                    FontAttributes="Italic"/>

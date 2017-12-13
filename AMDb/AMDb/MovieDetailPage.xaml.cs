@@ -22,14 +22,14 @@ namespace AMDb
             _thisViewModel = new MovieDetailViewModel(this.Navigation, movie, server);
             this.BindingContext = this._thisViewModel;
             InitializeComponent();
-            this.titleAndYear.Text = movie.title + " (" + movie.year + ")";
+            this.titleAndYear.Text = movie.Title + " (" + movie.Year + ")";
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
             await _thisViewModel.UpdateMovieInformationAsync();
-            this.details.Text = _thisViewModel.Runtime + " mins | " + _thisViewModel.Movie.genres;
+            this.details.Text = _thisViewModel.Runtime + " mins | " + _thisViewModel.Movie.Genres;
         }
     }
 }
