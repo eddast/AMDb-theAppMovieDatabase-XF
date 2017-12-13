@@ -11,23 +11,11 @@ namespace AMDb
 {
     public partial class TopRatedPage : ContentPage
     {
-        private MovieListViewModel _thisViewModel;
-        private MovieDBService _server;
-        List<MovieModel> topMovies;
 
         public TopRatedPage(MovieDBService server)
         {
             InitializeComponent();
-            this._server = server;
-            FillList();
-        }
-
-        private async void FillList()
-        {
-            topMovies = await _server.GetBasicTopMoviesInfoAsync();
-            _thisViewModel = new MovieListViewModel(this.Navigation, topMovies, _server);
-            this.BindingContext = _thisViewModel;
-            _thisViewModel.UpdateMovieCast();
+            //this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 1);
         }
     }
 }

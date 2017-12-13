@@ -11,19 +11,10 @@ namespace AMDb
 {
     public partial class MovieList : ContentPage {
 
-        private MovieListViewModel _thisViewModel;
-
         public MovieList(List<MovieModel> movieList, MovieDBService server)
         {
-            _thisViewModel = new MovieListViewModel(this.Navigation, movieList, server);
-            this.BindingContext = _thisViewModel;
             InitializeComponent();
-        }
-
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            await _thisViewModel.UpdateMovieCast();
+            this.BindingContext = new MovieListViewModel(this.Navigation, server, movieList);
         }
     }
 }

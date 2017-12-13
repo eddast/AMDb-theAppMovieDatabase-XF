@@ -6,7 +6,7 @@
           HasUnevenRows="True"
           ItemsSource="{Binding Movies, Mode=TwoWay}"
           SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
-          RowHeight="200">
+          RowHeight="100">
     <ListView.ItemTemplate>
         <DataTemplate>
             <ViewCell>

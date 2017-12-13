@@ -11,23 +11,10 @@ namespace AMDb
 {
     public partial class PopularMoviesPage: ContentPage
     {
-        private MovieListViewModel _thisViewModel;
-        private MovieDBService _server;
-        List<MovieModel> popularMovies;
-
         public PopularMoviesPage(MovieDBService server)
         {
             InitializeComponent();
-            this._server = server;
-            FillList();
-        }
-
-        private async void FillList()
-        {
-            popularMovies = await _server.GetPopularMoviesInfoAsync();
-            _thisViewModel = new MovieListViewModel(this.Navigation, popularMovies, _server);
-            this.BindingContext = _thisViewModel;
-            _thisViewModel.UpdateMovieCast();
+            //this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 2);
         }
     }
 }

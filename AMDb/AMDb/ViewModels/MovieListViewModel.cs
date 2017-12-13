@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System;
 
 namespace AMDb
 {
@@ -15,11 +16,26 @@ namespace AMDb
         private MovieModel _selectedMovie;
         private MovieDBService _server;
 
-        public MovieListViewModel(INavigation navigation, List<MovieModel> movies, MovieDBService server)
+        public MovieListViewModel(INavigation navigation, MovieDBService server, List<MovieModel> movies, int ListType = 0)
         {
             this._navigation = navigation;
-            this._movies = new ObservableCollection<MovieModel>(movies);
             this._server = server;
+            if (movies != null) { this._movies = new ObservableCollection<MovieModel>(movies); }
+            else { GetListAsync(ListType); }
+        }
+
+        private async void GetListAsync(int listType)
+        {
+            if (listType == 1)
+            {
+                var MovieModelList = await _server.GetBasicTopMoviesInfoAsync();
+                Movies = new ObservableCollection<MovieModel>(MovieModelList);
+            }
+            else if (listType == 2)
+            {
+                var MovieModelList = await _server.GetPopularMoviesInfoAsync();
+                Movies = new ObservableCollection<MovieModel>(MovieModelList);
+            }
         }
 
         public ObservableCollection<MovieModel> Movies
@@ -35,7 +51,6 @@ namespace AMDb
         {
             foreach(var movie in _movies) {
                 movie.Cast = await _server.GetThreeCastMembersAsync(movie.Id);
-                Movies = _movies;
             }
 
         }

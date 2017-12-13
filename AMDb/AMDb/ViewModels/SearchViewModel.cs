@@ -14,6 +14,7 @@ namespace AMDb
         private bool searching;
         private bool buttonClickable;
         private string query;
+        private List<MovieModel> _movies;
         public bool IsSearching
         {
             get => this.searching;
@@ -52,16 +53,17 @@ namespace AMDb
             this._navigation = navigation;
             searching = false;
             buttonClickable = true;
+            _movies = new List<MovieModel>();
 
             SearchCommand = new Command(async () =>{
 
                 if (query != "") {
 
                     IsSearching = true; ButtonClickable = false;
-                    List<MovieModel> movies = await _server.GetBasicMovieInfoByTitleAsync(query);
-                    await navigation.PushAsync(new MovieList(movies, _server));
+                    _movies = await _server.GetBasicMovieInfoByTitleAsync(query);
+                    await navigation.PushAsync(new MovieList(_movies, _server));
                     IsSearching = false; ButtonClickable = true;
-                    Query = "";
+                    Query = ""; //_movies = new List<MovieModel>();
                 }
             });
         }
