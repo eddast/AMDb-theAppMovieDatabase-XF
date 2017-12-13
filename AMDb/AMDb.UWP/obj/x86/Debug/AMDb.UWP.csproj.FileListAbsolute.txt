@@ -231,6 +231,10 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.pdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\resources.pri
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AppxManifest.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.build.appxrecipe
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Microsoft.CSharp.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\System.Core.dll
@@ -358,6 +362,7 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\DM.MovieApi.pdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\DM.MovieApi.xml
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\AMDb.UWP.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\App.g.i.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\App.g.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\MainPage.g.i.cs
@@ -446,9 +451,4 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AppxManifest.xml
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.build.appxrecipe
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\AMDb.UWP.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\obj\x86\Debug\ProjectArchitectures.txt

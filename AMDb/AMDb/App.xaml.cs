@@ -14,7 +14,26 @@ namespace AMDb
         {
             InitializeComponent();
             MovieDBService server = new MovieDBService();
-            MainPage = new NavigationPage(new MainPage(server));
+            var SearchPage = new MainPage(server);
+            var SearchNavigationPage = new NavigationPage(SearchPage);
+            SearchNavigationPage.Title = "Movie Search";
+            
+            var TopMoviesPage = new TopRatedPage(server);
+            var TopMoviesNavigationPage = new NavigationPage(TopMoviesPage);
+            TopMoviesNavigationPage.Title = "Top Rated Movies";
+
+
+            var PopularPage = new PopularMoviesPage(server);
+            var PopularNavigationPage = new NavigationPage(PopularPage);
+            PopularNavigationPage.Title = "Popular Movies";
+
+            var tabbedPage = new TabbedPage();
+
+            tabbedPage.Children.Add(SearchNavigationPage);
+            tabbedPage.Children.Add(TopMoviesNavigationPage);
+            tabbedPage.Children.Add(PopularNavigationPage);
+
+            MainPage = tabbedPage;
         }
 
         protected override void OnStart()
