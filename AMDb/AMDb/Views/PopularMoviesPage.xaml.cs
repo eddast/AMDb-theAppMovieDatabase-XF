@@ -14,7 +14,7 @@ namespace AMDb
         public PopularMoviesPage(MovieDBService server)
         {
             InitializeComponent();
-            //this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 2);
+            this.BindingContext = new MovieListViewModel(this.Navigation, server, null, 2);
         }
     }
 }
