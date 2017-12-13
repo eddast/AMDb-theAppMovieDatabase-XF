@@ -26,7 +26,7 @@ namespace AMDb
         private async void GetListAsync(List<MovieModel> movies, int listType)
         {
             if(movies != null ) {
-                _movies = new ObservableCollection<MovieModel>(movies);
+                Movies = new ObservableCollection<MovieModel>(movies);
             }
             else if (listType == 1) {
                 var MovieModelList = await _server.GetBasicTopMoviesInfoAsync();
@@ -51,7 +51,7 @@ namespace AMDb
 
         public async Task UpdateMovieCast()
         {
-            foreach (var movie in _movies) {
+            foreach (var movie in Movies) {
                 movie.Cast = await _server.GetThreeCastMembersAsync(movie.Id);
             }
 
