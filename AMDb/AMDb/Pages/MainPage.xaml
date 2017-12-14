@@ -7,7 +7,14 @@
              xmlns:control="clr-namespace:AMDb">
     <StackLayout Margin="10,10,10,10"
                  Spacing="10">
-        <Label Margin="20, 20"
+        <Label Margin="0, 30, 0, 10"
+               Text="MOVIE SEARCH"
+               FontSize="30"
+               FontAttributes="Bold"
+               FontFamily="BanglaSangamMN-Bold"
+               TextColor="#4e4159"
+               HorizontalOptions="CenterAndExpand"/>
+        <Label Margin="0, 0, 10, 0"
                Text="Enter words in a movie title and press enter:"
                FontSize="14"
                FontAttributes="Italic"

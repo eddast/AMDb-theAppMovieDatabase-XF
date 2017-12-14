@@ -17,6 +17,7 @@
                 <Label  x:Name="titleAndYear"
                     Text=""
                     Margin="20,10,20,10"
+                    TextColor="#405A7F"
                     FontSize="35"
                     FontAttributes="Bold"/>
                 <Label  x:Name="details"
