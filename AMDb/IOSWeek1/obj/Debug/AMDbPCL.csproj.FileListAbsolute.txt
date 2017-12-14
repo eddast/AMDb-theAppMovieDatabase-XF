@@ -15,5 +15,6 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\bin\Debug\DM.MovieApi.pdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\bin\Debug\DM.MovieApi.xml
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\obj\Debug\AMDbPCL.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\obj\Debug\AMDbPCL.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\IOSWeek1\obj\Debug\AMDbPCL.pdb
