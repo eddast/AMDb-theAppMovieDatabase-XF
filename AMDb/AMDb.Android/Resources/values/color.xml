@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+  
+  <!-- colors from app pallette: https://ibb.co/cB4Xzb-->
+  <!-- pallette generated via color.adobe.com-->
+
+  <color name="themeLightBlue">#0063D6</color>
+  <color name="themeBlue">#405A7F</color>
+  <color name="themeLightPurple">#4b3a56</color>
+  <color name="themePurple">#4e4159</color>
+  <color name="themeYellow">#FFBB4E</color>
+
+  <!-- normal non-pallette colors -->
+  <color name="gray">#c6c4c4</color>
+  <color name="lightGray">#d3d1d1</color>
+  <color name="white">#ffffff</color>
+
+</resources>
