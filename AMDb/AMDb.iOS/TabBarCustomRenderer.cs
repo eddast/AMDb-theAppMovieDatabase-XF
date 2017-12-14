@@ -19,7 +19,7 @@ namespace AMDb
             UITextAttributes normalTextAttributes = new UITextAttributes();
             normalTextAttributes.Font = UIFont.FromName("BanglaSangamMN-Bold", 10.0F); // unselected
             UITabBarItem.Appearance.SetTitleTextAttributes(normalTextAttributes, UIControlState.Normal);
-            TabBar.TintColor = UIColor.Red;
+            TabBar.TintColor = UIColor.Purple;
         }
 
         public override void ViewDidAppear(bool animated)
