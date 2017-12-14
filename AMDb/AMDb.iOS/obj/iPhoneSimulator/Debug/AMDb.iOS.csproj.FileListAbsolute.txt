@@ -9,7 +9,6 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\DM.MovieApi.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\AMDb.pdb
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\AMDb.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll.mdb
@@ -80,3 +79,5 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\obj\iPhoneSimulator\Debug\AMDb.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\obj\iPhoneSimulator\Debug\AMDb.iOS.exe
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\obj\iPhoneSimulator\Debug\AMDb.iOS.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\bin\iPhoneSimulator\Debug\AMDb.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.iOS\obj\iPhoneSimulator\Debug\optimized\popularIcon.png
