@@ -20,6 +20,7 @@ namespace AMDb
         public string BackdropPath { get => this.backdropPath; set => this.backdropPath =value; }
         public string Overview { get => this.overview; set => this.overview = value; }
         public string Genres { get => this.genres; set => this.genres = value; }
+        public string TitleAndYear { get => this.titleAndYear; set => this.titleAndYear = value; }
 
         // Methods that may change or be fetched after initialization
         // Implement the on property changed method to notify view of change
@@ -50,6 +51,7 @@ namespace AMDb
         private int id;
         private string title;
         private string year;
+        private string titleAndYear;
         private string posterPath;
         private string backdropPath;
         private string overview;
@@ -67,6 +69,7 @@ namespace AMDb
             this.id = movie.Id;
             this.title = movie.Title;
             this.year = movie.ReleaseDate.Year.ToString();
+            this.titleAndYear = this.title + " (" + this.year + ")";
             this.genres = get_movie_genres(movie);
             this.overview = movie.Overview;
             this.posterPath = "http://image.tmdb.org/t/p/original" + movie.PosterPath;

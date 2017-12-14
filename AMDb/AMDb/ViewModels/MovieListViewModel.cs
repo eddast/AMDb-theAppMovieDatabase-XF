@@ -59,7 +59,6 @@ namespace AMDb
 
             SearchCommand = new Command(async () =>{
                 if (Query != "") { GetListAsync(Query); }
-                else { /*TODO*/ }
             });
     }
 

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-14T18:35:18.002</Modified>
+      <Modified>2017-12-14T18:47:06.963</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe">
       <PackagePath>entrypoint\AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-14T18:35:16.509</Modified>
+      <Modified>2017-12-14T18:47:05.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,11 +513,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDb.dll">
       <PackagePath>AMDb.dll</PackagePath>
-      <Modified>2017-12-14T18:29:11.901</Modified>
+      <Modified>2017-12-14T18:47:03.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDbPCL.dll">
       <PackagePath>AMDbPCL.dll</PackagePath>
-      <Modified>2017-12-14T18:02:37.070</Modified>
+      <Modified>2017-12-14T18:47:03.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\DM.MovieApi.dll">
       <PackagePath>DM.MovieApi.dll</PackagePath>
@@ -704,7 +704,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe">
       <PackagePath>AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-14T18:35:17.997</Modified>
+      <Modified>2017-12-14T18:47:06.959</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

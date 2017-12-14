@@ -26,7 +26,7 @@
                     <StackLayout Grid.Column="1"
                                  Margin="10,20,10,10">
                         <Label x:Name="titleAndYear"
-                               Text ="{Binding Title}"
+                               Text ="{Binding TitleAndYear}"
                                FontSize="24"
                                TextColor="#405A7F"
                                FontAttributes="Bold"/>
