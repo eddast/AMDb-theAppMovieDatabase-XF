@@ -29,22 +29,27 @@
                      HeightRequest="1"
                      HorizontalOptions="FillAndExpand">
             </BoxView>
-            <Grid Padding="10,5"
-                  RowSpacing="6">
+            <Label  Margin="20,10,10,10"
+                    Text="{Binding Tagline}"
+                    FontSize="16"
+                    TextColor="DimGray"
+                    FontAttributes="Bold"/>
+                <Grid Padding="10,5"
+                      RowSpacing="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="250"/>
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="130"/>
+                        <ColumnDefinition Width="150"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Image  Margin="10,10,0,10"
-                            Source="{Binding Movie.PosterPath}"/>
-                    <StackLayout Grid.Column="1"
+                            Source="{Binding Movie.PosterPath}"
+                            VerticalOptions="StartAndExpand"/>
+                    <ScrollView Grid.Column="1"
                                  Margin="10,10,0,10">
-                        <Label  Text="{Binding Tagline}"
-                                FontSize="16"
-                                TextColor="DimGray"
-                                FontAttributes="Bold"/>
                         <Label Text="{Binding Movie.Overview}"/>
-                    </StackLayout>
+                    </ScrollView>
                 </Grid>
             </StackLayout>
         </ScrollView>
