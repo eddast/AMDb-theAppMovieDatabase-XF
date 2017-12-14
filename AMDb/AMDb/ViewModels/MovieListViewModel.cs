@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using System;
+using System.Windows.Input;
 
 namespace AMDb
 {
@@ -15,11 +16,34 @@ namespace AMDb
         private ObservableCollection<MovieModel> _movies;
         private MovieModel _selectedMovie;
         private MovieDBService _server;
+        private bool _isRefreshing = false;
+        private int _listType;
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set {
+
+                _isRefreshing = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ICommand RefreshCommand
+        {
+            get {
+                return new Command(async () => {
+
+                    IsRefreshing = true;
+                    GetListAsync(null, _listType);
+                });
+            }
+        }
 
         public MovieListViewModel(INavigation navigation, MovieDBService server, List<MovieModel> movies, int ListType = 0)
         {
             this._navigation = navigation;
             this._server = server;
+            this._listType = ListType;
             GetListAsync(movies, ListType);
         }
 
@@ -36,6 +60,8 @@ namespace AMDb
                 var MovieModelList = await _server.GetPopularMoviesInfoAsync();
                 Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }
+
+            IsRefreshing = false;
 
             UpdateMovieCast();
         }
@@ -56,8 +82,7 @@ namespace AMDb
             }
 
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-
+        
         public MovieModel SelectedMovie
         {
             get => this._selectedMovie;
@@ -72,6 +97,7 @@ namespace AMDb
             }
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

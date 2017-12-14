@@ -6,7 +6,10 @@
           HasUnevenRows="True"
           ItemsSource="{Binding Movies, Mode=TwoWay}"
           SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
-          RowHeight="100">
+          IsPullToRefreshEnabled="True"
+          RefreshCommand="{Binding RefreshCommand}"
+          IsRefreshing="{Binding IsRefreshing}" 
+          RowHeight="150">
     <ListView.ItemTemplate>
         <DataTemplate>
             <ViewCell>
