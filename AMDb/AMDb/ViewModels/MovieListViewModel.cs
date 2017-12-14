@@ -18,6 +18,8 @@ namespace AMDb
         private MovieDBService _server;
         private bool _isRefreshing = false;
         private int _listType;
+        public bool RefreshEnabled { get; set; }
+
         public bool IsRefreshing
         {
             get { return _isRefreshing; }
@@ -44,6 +46,10 @@ namespace AMDb
             this._navigation = navigation;
             this._server = server;
             this._listType = ListType;
+
+            if (movies == null) { this.RefreshEnabled = true; }
+            else                { this.RefreshEnabled = false; }
+
             GetListAsync(movies, ListType);
         }
 

@@ -6,7 +6,7 @@
           HasUnevenRows="True"
           ItemsSource="{Binding Movies, Mode=TwoWay}"
           SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
-          IsPullToRefreshEnabled="True"
+          IsPullToRefreshEnabled="{Binding RefreshEnabled}"
           RefreshCommand="{Binding RefreshCommand}"
           IsRefreshing="{Binding IsRefreshing}" 
           RowHeight="150">
