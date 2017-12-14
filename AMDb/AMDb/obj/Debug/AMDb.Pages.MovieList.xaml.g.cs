@@ -12,12 +12,12 @@ namespace AMDb {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-F" +
-        "orms\\AMDb\\AMDb\\Views\\PopularMoviesPage.xaml")]
-    public partial class PopularMoviesPage : global::Xamarin.Forms.ContentPage {
+        "orms\\AMDb\\AMDb\\Pages\\MovieList.xaml")]
+    public partial class MovieList : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PopularMoviesPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MovieList));
         }
     }
 }

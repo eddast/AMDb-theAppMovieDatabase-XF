@@ -12,12 +12,16 @@ namespace AMDb {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Edda Steinunn\\Documents\\Visual Studio 2017\\Projects\\T-488-MAPP-Xamarin-F" +
-        "orms\\AMDb\\AMDb\\Views\\TopRatedPage.xaml")]
-    public partial class TopRatedPage : global::Xamarin.Forms.ContentPage {
+        "orms\\AMDb\\AMDb\\Pages\\MainPage.xaml")]
+    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.SearchBar MovieSearchBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TopRatedPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            MovieSearchBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.SearchBar>(this, "MovieSearchBar");
         }
     }
 }
