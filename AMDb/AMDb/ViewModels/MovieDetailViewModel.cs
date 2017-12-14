@@ -65,8 +65,10 @@ namespace AMDb
 
         private async Task UpdateTaglineAsync()
         {
-            var movieTagline = "\"" + await _server.GetTaglineAsync(_movie.Id) + "\"";
-            Tagline = movieTagline;
+            var movieTagline = await _server.GetTaglineAsync(_movie.Id);
+            if (movieTagline != "" && movieTagline != null){
+                Tagline = "\"" + movieTagline + "\"";
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
