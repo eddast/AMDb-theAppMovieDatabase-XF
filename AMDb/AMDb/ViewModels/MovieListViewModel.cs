@@ -18,6 +18,7 @@ namespace AMDb
         private MovieDBService _server;
         private bool _isRefreshing = false;
         private int _listType;
+        private string _query;
         public bool RefreshEnabled { get; set; }
 
         public bool IsRefreshing
@@ -29,16 +30,21 @@ namespace AMDb
                 OnPropertyChanged();
             }
         }
+        public string Query
+        {
+            get => _query;
+            set {
+
+                if (value != null){
+                    _query = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public ICommand RefreshCommand
         {
-            get {
-                return new Command(async () => {
-
-                    IsRefreshing = true;
-                    GetListAsync(null, _listType);
-                });
-            }
+            get { return new Command( async () => { GetListAsync(); }); }
         }
 
         public MovieListViewModel(INavigation navigation, MovieDBService server, List<MovieModel> movies, int ListType = 0)
@@ -47,22 +53,33 @@ namespace AMDb
             this._server = server;
             this._listType = ListType;
 
-            if (movies == null) { this.RefreshEnabled = true; }
-            else                { this.RefreshEnabled = false; }
+            if (ListType == 0)  { this.RefreshEnabled = false; }
+            else                { this.RefreshEnabled = true;
+                                  GetListAsync(); }
 
-            GetListAsync(movies, ListType);
-        }
+            SearchCommand = new Command(async () =>{
+                if (Query != "") { GetListAsync(Query); }
+                else { /*TODO*/ }
+            });
+    }
 
-        private async void GetListAsync(List<MovieModel> movies, int listType)
+        public ICommand SearchCommand { protected set; get; }
+        
+
+        private async void GetListAsync(string query = "")
         {
-            if(movies != null ) {
-                Movies = new ObservableCollection<MovieModel>(movies);
+            IsRefreshing = true;
+
+            if (_listType == 0 ) {
+                var MovieModelList = await _server.GetBasicMovieInfoByTitleAsync(query);
+                Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }
-            else if (listType == 1) {
+            else if (_listType == 1) {
                 var MovieModelList = await _server.GetBasicTopMoviesInfoAsync();
                 Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }
-            else if (listType == 2) {
+            else if (_listType == 2) {
+                IsRefreshing = true;
                 var MovieModelList = await _server.GetPopularMoviesInfoAsync();
                 Movies = new ObservableCollection<MovieModel>(MovieModelList);
             }

@@ -3,45 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AMDb"
              x:Class="AMDb.MainPage"
-             Title="Movie Search">
-    <ContentPage.Content>
-
-        <StackLayout Margin="10,10,10,10"
-                     VerticalOptions="Start"
-                     Spacing="10">
-                <Label  Margin="0,25,0,25"
-                        Text="Movie Search"
-                        FontSize="45"
-                        XAlign="Center"
-                        TextColor="DimGray"
-                        FontAttributes="Bold"/>
-                <Label  Margin="20,20,20,0"
-                        Text="Enter words in a movie title: "
-                        FontSize="14"
-                        TextColor="DimGray"
-                        FontAttributes="Italic"/>
-                <Entry  Margin="20,20,20,0"
-                        x:Name="MovieEntry"
-                        Placeholder="Name"
-                        Text="{Binding Query}"/>
-                <Button x:Name="MovieButton"
-                        Margin="50,30,50,0"
-                        Text="Get Movie"
-                        TextColor="WhiteSmoke"
-                        FontAttributes="Bold"
-                        FontSize="20"
-                        BackgroundColor="DeepSkyBlue"
-                        Command="{Binding SearchCommand}"
-                        IsEnabled="{Binding ButtonClickable}"
-                        HeightRequest="60" WidthRequest="60"
-                        MinimumHeightRequest="40" MinimumWidthRequest="40"/>
-                <ActivityIndicator  x:Name="LoadSpinner"
-                                    Color="DarkGray"
-                                    IsRunning="{Binding IsSearching}"
-                                    IsVisible="{Binding IsSearching}"/>
-                <Label  x:Name="MovieLabel"
-                        FontSize="Medium"/>
-        </StackLayout>
-    </ContentPage.Content>
-
+             Title="Movie Search"
+             xmlns:control="clr-namespace:AMDb">
+    <StackLayout Margin="10,10">
+        <SearchBar x:Name="MovieSearchBar"
+                   Margin="10,10"
+                   Placeholder="Star Wars: The Last Jedi"
+                   Text="{Binding Query}"
+                   SearchCommand="{Binding SearchCommand}"
+                   FontSize="18"/>
+        <control:MovieListContentView/>
+    </StackLayout>
 </ContentPage>

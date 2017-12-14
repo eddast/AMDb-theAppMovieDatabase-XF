@@ -17,7 +17,7 @@ namespace AMDb
         {
             InitializeComponent();
             this._server = server;
-            BindingContext = new SearchViewModel(Navigation, server);
+            BindingContext = new MovieListViewModel(Navigation, server, null, 0);
         }
 
     }

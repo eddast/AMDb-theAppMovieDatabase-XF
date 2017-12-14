@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T23:59:30.244</Modified>
+      <Modified>2017-12-14T11:19:42.425</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\AMDb.UWP.exe">
       <PackagePath>entrypoint\AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T23:59:28.401</Modified>
+      <Modified>2017-12-14T11:19:38.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,11 +513,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDb.dll">
       <PackagePath>AMDb.dll</PackagePath>
-      <Modified>2017-12-13T23:59:23.922</Modified>
+      <Modified>2017-12-14T11:17:20.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\AMDbPCL.dll">
       <PackagePath>AMDbPCL.dll</PackagePath>
-      <Modified>2017-12-13T17:25:19.359</Modified>
+      <Modified>2017-12-14T11:17:20.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\bin\Debug\DM.MovieApi.dll">
       <PackagePath>DM.MovieApi.dll</PackagePath>
@@ -700,11 +700,11 @@
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T16:29:56.648</Modified>
+      <Modified>2017-12-14T11:19:41.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.UWP\bin\x86\Debug\Core\AMDb.UWP.exe">
       <PackagePath>AMDb.UWP.exe</PackagePath>
-      <Modified>2017-12-13T23:59:30.235</Modified>
+      <Modified>2017-12-14T11:19:42.418</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

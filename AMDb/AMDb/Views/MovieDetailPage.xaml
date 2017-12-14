@@ -5,31 +5,31 @@
              Title="Movie Information">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout VerticalOptions="Start"
+            <StackLayout VerticalOptions="Start"
                      Spacing="5">
-            <Image x:Name="backdropImage"
+                <Image x:Name="backdropImage"
                    Source="{Binding Movie.BackdropPath}"
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                    AbsoluteLayout.LayoutFlags="All"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"
                    Aspect="AspectFill"/>
-            <Label  x:Name="titleAndYear"
+                <Label  x:Name="titleAndYear"
                     Text=""
                     Margin="20,10,20,10"
                     FontSize="35"
                     FontAttributes="Bold"/>
-            <Label  x:Name="details"
+                <Label  x:Name="details"
                     Margin="20,0,20,10"
                     Text=""
                     FontSize="14"
                     TextColor="LightSlateGray"/>
             <BoxView Color="LightGray"
-                     Margin="20,0,20,0"
+                     Margin="20,0,20,10"
                      HeightRequest="1"
                      HorizontalOptions="FillAndExpand">
             </BoxView>
-            <Label  Margin="20,10,10,10"
+            <Label  Margin="20,0,10,0"
                     Text="{Binding Tagline}"
                     FontSize="16"
                     TextColor="DimGray"
