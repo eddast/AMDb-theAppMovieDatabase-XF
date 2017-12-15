@@ -8,7 +8,7 @@ a Samsung Galaxy Alpha Mobile Phone (Android 5.0 with API 21) for Android and a 
 ### Application Structure and Purpose
 The application has partially the same function as week one and two's iOS and Android app,
 again a tabbed application was created but now with three tabs whose purpose is to fetch information about movies
-from an external web service and displays that information appropriately.
+from an external web service and display that information appropriately.
 This week's app however differs from the others because it is cross-platform compatible and fetches information
 significantly faster than the other apps since it uses "lazy-load" (i.e. loads after rendering page/screen)
 for some properties of movie information.
@@ -34,7 +34,7 @@ This list has a pull-to-refresh function, where when user pulls the list down, t
 Below are images that demonstrate the Top Rated Movies tab's functionality:
 
 ![alt text](https://image.ibb.co/f8oDEm/Top_Rated_Tab.jpg)
-(Note that in the first frame not all images and cast members have been fetched. This is intentional to demonstrate the "lazy-load")
+(Note that the first frame demonstrates the pull-to-refresh function; since as stated before some resources are asynchroniously fetched like images and cast members and these things have not been fetched in this frame for all cells as reloading is in progress. This is intentional to demonstrate the "lazy-load")
 
 ### Third tab: Popular Movies
 This tab has essentially the same functionality as the Top Rated Movies tab, except that movies displayed in this view's list
@@ -52,7 +52,7 @@ The entire view can be scrolled (i.e. is inside a scrollview) and in addition to
 See images describing this functionality below:
 
 ![alt text](https://image.ibb.co/k9HZLR/Detail_View.jpg)
-(In the second frame, the tagline and runtime have not yet been fetched to demonstrate the view's lazy load. Then after a brief period this is fetched and the end results is as shown in the third frame)
+(In the first frame, the tagline and runtime have not yet been fetched to demonstrate the view's lazy load. Then after a brief period this is fetched and the end results is as shown in the second frame. The third and the fourth frame display possible scrolling of the view and the overview section)
 
 ### Cross-Platform Compatibility
 All function demonstrated above using iPhone simulator is preserved for both Android and UWP (except that UWP does not support the pull-to-load functionality)
