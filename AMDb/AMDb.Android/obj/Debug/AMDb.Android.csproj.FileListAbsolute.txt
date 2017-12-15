@@ -81,7 +81,6 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\DM.MovieApi.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\AMDb.pdb
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\AMDb.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\Xamarin.Forms.Core.pdb
@@ -113,6 +112,7 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\obj\Debug\res\drawable\launchscreen.png
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\obj\Debug\R.cs.flag
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\obj\Debug\uploadflags.txt
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\AMDb.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\bin\Debug\AMDb.Android.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\obj\Debug\android\assets\AMDb.Android.dll.mdb
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb.Android\obj\Debug\android\assets\AMDb.dll.mdb

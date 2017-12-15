@@ -36,9 +36,6 @@
                     FontAttributes="Bold"/>
                 <Grid Padding="10,5"
                       RowSpacing="6">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="250"/>
-                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition Width="*"/>
@@ -46,10 +43,9 @@
                     <Image  Margin="10,10,0,10"
                             Source="{Binding Movie.PosterPath}"
                             VerticalOptions="StartAndExpand"/>
-                    <ScrollView Grid.Column="1"
-                                 Margin="10,10,0,10">
-                        <Label Text="{Binding Movie.Overview}"/>
-                    </ScrollView>
+                    <Label Grid.Column="1"
+                           Margin="10,10,0,10"
+                           Text="{Binding Movie.Overview}"/>
                 </Grid>
             </StackLayout>
         </ScrollView>
