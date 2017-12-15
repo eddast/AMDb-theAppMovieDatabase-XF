@@ -52,13 +52,14 @@ namespace AMDb
             this._navigation = navigation;
             this._server = server;
             this._listType = ListType;
+            this._movies = new ObservableCollection<MovieModel>();
 
             if (ListType == 0)  { this.RefreshEnabled = false; }
             else                { this.RefreshEnabled = true;
                                   GetListAsync(); }
 
             SearchCommand = new Command(async () =>{
-                if (Query != "") { GetListAsync(Query); }
+                if (Query != "" && IsRefreshing == false) { GetListAsync(Query); }
             });
     }
 
@@ -70,17 +71,13 @@ namespace AMDb
             IsRefreshing = true;
 
             if (_listType == 0 ) {
-                var MovieModelList = await _server.GetBasicMovieInfoByTitleAsync(query);
-                Movies = new ObservableCollection<MovieModel>(MovieModelList);
+                Movies = new ObservableCollection<MovieModel>(await _server.GetBasicMovieInfoByTitleAsync(query));
             }
             else if (_listType == 1) {
-                var MovieModelList = await _server.GetBasicTopMoviesInfoAsync();
-                Movies = new ObservableCollection<MovieModel>(MovieModelList);
+                Movies = new ObservableCollection<MovieModel>(await _server.GetBasicTopMoviesInfoAsync());
             }
             else if (_listType == 2) {
-                IsRefreshing = true;
-                var MovieModelList = await _server.GetPopularMoviesInfoAsync();
-                Movies = new ObservableCollection<MovieModel>(MovieModelList);
+                Movies = new ObservableCollection<MovieModel>(await _server.GetPopularMoviesInfoAsync());
             }
 
             IsRefreshing = false;

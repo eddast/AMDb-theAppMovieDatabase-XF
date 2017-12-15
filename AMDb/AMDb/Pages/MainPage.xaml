@@ -22,10 +22,19 @@
                HorizontalOptions="CenterAndExpand"/>
         <SearchBar BackgroundColor="White"
                    x:Name="MovieSearchBar"
-                   Placeholder="Star Wars"
+                   Placeholder="E.g. 'Star Wars'"
                    Text="{Binding Query}"
                    SearchCommand="{Binding SearchCommand}"
-                   FontSize="18"/>
+                   FontSize="18"
+                   VerticalOptions="EndAndExpand">
+            <SearchBar.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                            Android="50.0"
+                            iOS="-1.0"
+                            WinPhone="-1">
+                </OnPlatform>
+            </SearchBar.HeightRequest>
+        </SearchBar>
         <control:MovieListContentView/>
     </StackLayout>
 </ContentPage>
