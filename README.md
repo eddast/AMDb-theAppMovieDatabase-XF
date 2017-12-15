@@ -80,7 +80,7 @@ The UWP Popular tab appearance:
 ![alt text](https://image.ibb.co/jgWx76/UWPPopular.jpg)
 
 #### Custom Rendering
-Very minimal custom rendering is present in this project because that was considered unnecessary since all platforms display the information quite delightfully. Although, the tab bar displayed on iOS is custom rendered and displays icons to enhance user experience because without it the apparence seemed unnatural.
+Very minimal custom rendering is present in this project because that was considered unnecessary since all platforms display the information quite delightfully. Although, the tab bar displayed on iOS is custom rendered and displays icons to enhance user experience because without it the appearence seemed unnatural.
 
 ### Enhancements from previous iOS and Android apps
 Various changes were made in functionality, coding convention and code structure but one enhancement was above all those.
