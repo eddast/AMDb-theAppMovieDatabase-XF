@@ -55,8 +55,7 @@ See images describing this functionality below:
 (In the first frame, the tagline and runtime have not yet been fetched to demonstrate the view's lazy load. Then after a brief period this is fetched and the end results is as shown in the second frame. The third and the fourth frame display possible scrolling of the view and the overview section)
 
 ### Cross-Platform Compatibility
-All function demonstrated above using iPhone simulator is preserved for both Android and UWP (except that UWP does not support the pull-to-load functionality)
-Both are quite usable and have similar user interface. Below are visual demonstrations of these two remaining platforms although these images only to show the UI of the two platforms as functionality has already been demonstrated in details.
+All function demonstrated above is preserved for both Android and UWP (except that UWP does not support the pull-to-load functionality). Both are quite usable and have similar user interface. Below are visual demonstrations of these two remaining platforms although these images only show the appearance of the two platforms, since functionality has already been demonstrated in details.
 
 #### Android
 
@@ -81,27 +80,12 @@ The UWP Popular tab appearance:
 ![alt text](https://image.ibb.co/jgWx76/UWPPopular.jpg)
 
 #### Custom Rendering
-Very minimal custom rendering is present in this project because that was considered unnecessary since all platforms display the information quite delightfully.
-Although, the tab bar displayed on iOS is custom rendered and displays icons to enhance user experience because without it the apparence seemed unnatural.
+Very minimal custom rendering is present in this project because that was considered unnecessary since all platforms display the information quite delightfully. Although, the tab bar displayed on iOS is custom rendered and displays icons to enhance user experience because without it the apparence seemed unnatural.
 
 ### Enhancements from previous iOS and Android apps
 Various changes were made in functionality, coding convention and code structure but one enhancement was above all those.
-As previously stated, this week's Xamarin Forms application is significantly faster than the other apps created for the course as
-some information is fetched asynchroniously ("lazy-loaded"), such as movie images, movie cast, movie tagline and movie runtime.
-This does not greatly affect the user experience because even though page does not display full information initially,
-it takes little time fetching the rest of the information.
-To put this a bit into context, a minor experiment was conducted;
-recieveing results with "Fargo" as a query string on last week's Android app took 12,29s,
-while on the Xamarin Forms app it takes a mere 0.28s! (Both tests were conducted on Samsung Galaxy Alpha)
-Moreover judging by this minor experiment, performance was enhanced by 98%!
-(represented as percentage of speed increment for this specific experiment)
+As previously stated, this week's Xamarin Forms application is significantly faster than the other apps created for the course as some information is fetched asynchroniously ("lazy-loaded"), such as movie images, movie cast, movie tagline and movie runtime. This does not greatly affect the user experience because even though page does not display full information initially, it takes little time fetching the rest of the information. To put this a bit into context, a minor experiment was conducted; recieveing results with "Fargo" as a query string on last week's Android app took 12.29 seconds, while on the Xamarin Forms app it takes a mere half a second (0.28s) to receive results! (Both tests were conducted on Samsung Galaxy Alpha). Moreover judging by this minor experiment, performance was enhanced by 98% in this week's app versus last week's app. (performance represented as percentage of speed increment for this specific experiment)
 
 ### Known limitations
-The app uses significant memory due to many tasks running asynchroniously when resources are fetched which sometimes can cause problems on memory-sensitive devices.
-For example, my phone is four years old (meaning ancient in phone-years) and sometimes crashes when a lot of information is fetched at once.
-To make the application even run on my phone forced me to specify a large memory heap for the app's memory usage in the code.
-I conducted tests however on other better and newer phones which had no problem running the app however the user navigated and used it.
-In addition to this, the app can crash at random because of communication issues between either the app and the external web service
-or between the web service and the movie database; for example if there is too much load on the server (this results in a somehow malformed response from server)
-or if there is no internet connection. But since teacher stated that this would not be accounted for when grading these cases are not explicitly handled due to
+The app uses significant memory due to many tasks running on various threads when resources are fetched which sometimes can cause problems on memory-sensitive devices. For example, my phone is four years old (meaning ancient in phone-years) and sometimes crashes when a lot of information is fetched at once in the app. To make the application even able to run on my phone, I was forced to specify a large memory heap for the app's memory usage in the Android Manifest code. However, I conducted tests on other better and newer phones which had no problem at all running the app however the user navigated on it and used it. In addition to this, the app can crash at random because of communication issues between either the app and the external web service or between the web service and the movie database; for example if there is too much load on the server (this results in a somehow malformed response from server) or if there is no internet connection. But since teacher stated that this would not be accounted for when grading these cases are not explicitly handled due to
 limited time for the project.
