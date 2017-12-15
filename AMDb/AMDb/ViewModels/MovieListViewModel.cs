@@ -14,7 +14,7 @@ namespace AMDb
     {
         // Private variables for view model
         private INavigation _navigation;
-        private ObservableCollection<MovieModel> _movies;
+        private List<MovieModel> _movies;
         private MovieModel _selectedMovie;
         private MovieDBService _server;
         private bool _isRefreshing = false;
@@ -46,7 +46,7 @@ namespace AMDb
                 }
             }
         } // The collection of movies to display as list
-        public ObservableCollection<MovieModel> Movies {
+        public List<MovieModel> Movies {
             get => this._movies;
             set {
                 this._movies = value;
@@ -75,7 +75,7 @@ namespace AMDb
             this._navigation = navigation;
             this._server = server;
             _listType = ListType;
-            this._movies = new ObservableCollection<MovieModel>();
+            this._movies = new List<MovieModel>();
 
             if (_listType == 0)  { this.RefreshEnabled = false; }
             else                 { this.RefreshEnabled = true;
@@ -90,14 +90,16 @@ namespace AMDb
         {
             IsRefreshing = true;
 
-            if (_listType == (int)ListViewType.QueryResultList) {
-                Movies = new ObservableCollection<MovieModel>(await _server.GetBasicMovieInfoByTitleAsync(query));
-            }
-            else if (_listType == (int)ListViewType.TopRatedMoviesList) {
-                Movies = new ObservableCollection<MovieModel>(await _server.GetBasicTopMoviesInfoAsync());
-            }
-            else if (_listType == (int)ListViewType.PopularMoviesList) {
-                Movies = new ObservableCollection<MovieModel>(await _server.GetPopularMoviesInfoAsync());
+            switch (_listType) {
+
+                case (int)ListViewType.QueryResultList:
+                    Movies = await _server.GetBasicMovieInfoByTitleAsync(query); break;
+
+                case (int)ListViewType.TopRatedMoviesList:
+                    Movies = await _server.GetBasicTopMoviesInfoAsync(); break;
+
+                case (int)ListViewType.PopularMoviesList:
+                    Movies = await _server.GetPopularMoviesInfoAsync(); break;
             }
 
             IsRefreshing = false;
