@@ -18,11 +18,13 @@ namespace AMDb
         private MovieModel _selectedMovie;
         private MovieDBService _server;
         private bool _isRefreshing = false;
-        private int _listType;
         private string _query;
+        public int _listType;
 
         // Public properties
         public bool RefreshEnabled { get; set; }
+        public ICommand SearchCommand { protected set; get; }
+        public enum ListViewType { QueryResultList, TopRatedMoviesList, PopularMoviesList };
 
         // Public properties that notify view of changes
         // Are binding properties of the XAML view
@@ -68,36 +70,33 @@ namespace AMDb
             }
         }
      
-        public MovieListViewModel(INavigation navigation, MovieDBService server, List<MovieModel> movies, int ListType = 0)
+        public MovieListViewModel(INavigation navigation, MovieDBService server, int ListType)
         {
             this._navigation = navigation;
             this._server = server;
-            this._listType = ListType;
+            _listType = ListType;
             this._movies = new ObservableCollection<MovieModel>();
 
-            if (ListType == 0)  { this.RefreshEnabled = false; }
-            else                { this.RefreshEnabled = true;
-                                  GetListAsync(); }
+            if (_listType == 0)  { this.RefreshEnabled = false; }
+            else                 { this.RefreshEnabled = true;
+                                   GetListAsync(); }
 
             SearchCommand = new Command(async () =>{
                 if (Query != "" && IsRefreshing == false) { GetListAsync(Query); }
             });
     }
 
-        public ICommand SearchCommand { protected set; get; }
-        
-
         private async void GetListAsync(string query = "")
         {
             IsRefreshing = true;
 
-            if (_listType == 0 ) {
+            if (_listType == (int)ListViewType.QueryResultList) {
                 Movies = new ObservableCollection<MovieModel>(await _server.GetBasicMovieInfoByTitleAsync(query));
             }
-            else if (_listType == 1) {
+            else if (_listType == (int)ListViewType.TopRatedMoviesList) {
                 Movies = new ObservableCollection<MovieModel>(await _server.GetBasicTopMoviesInfoAsync());
             }
-            else if (_listType == 2) {
+            else if (_listType == (int)ListViewType.PopularMoviesList) {
                 Movies = new ObservableCollection<MovieModel>(await _server.GetPopularMoviesInfoAsync());
             }
 
