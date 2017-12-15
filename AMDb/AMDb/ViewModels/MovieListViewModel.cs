@@ -12,6 +12,7 @@ namespace AMDb
 {
     public class MovieListViewModel : INotifyPropertyChanged
     {
+        // Private variables for view model
         private INavigation _navigation;
         private ObservableCollection<MovieModel> _movies;
         private MovieModel _selectedMovie;
@@ -19,34 +20,54 @@ namespace AMDb
         private bool _isRefreshing = false;
         private int _listType;
         private string _query;
+
+        // Public properties
         public bool RefreshEnabled { get; set; }
 
-        public bool IsRefreshing
-        {
-            get { return _isRefreshing; }
-            set {
+        // Public properties that notify view of changes
+        // Are binding properties of the XAML view
 
+        // Determines if list is being refreshed
+        public bool IsRefreshing {
+            get => _isRefreshing;
+            set {
                 _isRefreshing = value;
                 OnPropertyChanged();
             }
-        }
-        public string Query
-        {
+        } // Query, a two-way bindable object, retrieves input from XAML UI
+        public string Query {
             get => _query;
             set {
-
-                if (value != null){
+                if (value != null) {
                     _query = value;
                     OnPropertyChanged();
                 }
             }
-        }
+        } // The collection of movies to display as list
+        public ObservableCollection<MovieModel> Movies {
+            get => this._movies;
+            set {
+                this._movies = value;
+                OnPropertyChanged();
+            }
+        } // Refresh command initiated on list pull
+        public ICommand RefreshCommand{
 
-        public ICommand RefreshCommand
-        {
             get { return new Command( async () => { GetListAsync(); }); }
-        }
 
+        } //A two-way binding object, denotes movie currently selected in list
+        public MovieModel SelectedMovie {
+            get => this._selectedMovie;
+            set {
+                if (value != null) {
+                    this._selectedMovie = value;
+                    this._navigation.PushAsync((new MovieDetailPage(_selectedMovie, _server)), true);
+                    _selectedMovie = null;
+                    OnPropertyChanged();
+                }
+            }
+        }
+     
         public MovieListViewModel(INavigation navigation, MovieDBService server, List<MovieModel> movies, int ListType = 0)
         {
             this._navigation = navigation;
@@ -85,34 +106,10 @@ namespace AMDb
             UpdateMovieCast();
         }
 
-        public ObservableCollection<MovieModel> Movies
-        {
-            get => this._movies; 
-            set {
-                this._movies = value;
-                OnPropertyChanged();
-            }
-        }
-
         public async Task UpdateMovieCast()
         {
             foreach (var movie in Movies) {
                 movie.Cast = await _server.GetThreeCastMembersAsync(movie.Id);
-            }
-
-        }
-        
-        public MovieModel SelectedMovie
-        {
-            get => this._selectedMovie;
-            set {
-                if(value != null) {
-
-                    this._selectedMovie = value;
-                    this._navigation.PushAsync((new MovieDetailPage(_selectedMovie, _server)), true);
-                    _selectedMovie = null;
-                    OnPropertyChanged();
-                }
             }
         }
 

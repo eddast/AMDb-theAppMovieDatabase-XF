@@ -48,9 +48,6 @@
       <DependentUpon>MovieDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MovieDetailViewModel.cs" />
-    <Compile Include="Pages\MovieList.xaml.cs">
-      <DependentUpon>MovieList.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\MovieListViewModel.cs" />
     <Compile Include="Pages\PopularMoviesPage.xaml.cs">
       <DependentUpon>PopularMoviesPage.xaml</DependentUpon>
@@ -83,12 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Pages\MovieList.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MovieDetailPage.xaml">

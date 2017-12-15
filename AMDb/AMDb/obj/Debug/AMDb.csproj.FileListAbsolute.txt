@@ -40,7 +40,6 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.MainPage.xaml.g.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.App.xaml.g.cs
-C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.MovieList.xaml.g.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.MovieDetailPage.xaml.g.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.TopRatedPage.xaml.g.cs
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP-Xamarin-Forms\AMDb\AMDb\obj\Debug\AMDb.Pages.PopularMoviesPage.xaml.g.cs
