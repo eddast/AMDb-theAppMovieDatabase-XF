@@ -11,11 +11,10 @@ namespace AMDb
 {
     public partial class PopularMoviesPage: ContentPage
     {
-
         public PopularMoviesPage(MovieDBService server)
         {
-            var listType = (int) MovieListViewModel.ListViewType.PopularMoviesList;
             InitializeComponent();
+            var listType = (int) MovieListViewModel.ListViewType.PopularMoviesList;
             this.BindingContext = new MovieListViewModel(this.Navigation, server, listType);
         }
     }

@@ -13,8 +13,8 @@ namespace AMDb
     {
         public MainPage(MovieDBService server)
         {
-            int listType = (int) MovieListViewModel.ListViewType.QueryResultList;
             InitializeComponent();
+            int listType = (int)MovieListViewModel.ListViewType.QueryResultList;
             BindingContext = new MovieListViewModel(Navigation, server, listType);
         }
     }

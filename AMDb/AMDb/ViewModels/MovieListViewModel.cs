@@ -24,7 +24,9 @@ namespace AMDb
         // Public properties
         public bool RefreshEnabled { get; set; }
         public ICommand SearchCommand { protected set; get; }
-        public enum ListViewType { QueryResultList, TopRatedMoviesList, PopularMoviesList };
+        public enum ListViewType {  QueryResultList,
+                                    TopRatedMoviesList,
+                                    PopularMoviesList };
 
         // Public properties that notify view of changes
         // Are binding properties of the XAML view
@@ -55,7 +57,7 @@ namespace AMDb
         } // Refresh command initiated on list pull
         public ICommand RefreshCommand{
 
-            get { return new Command( async () => { GetListAsync(); }); }
+            get { return new Command( async () => { await GetListAsync(); }); }
 
         } //A two-way binding object, denotes movie currently selected in list
         public MovieModel SelectedMovie {
@@ -77,16 +79,22 @@ namespace AMDb
             _listType = ListType;
             this._movies = new List<MovieModel>();
 
-            if (_listType == 0)  { this.RefreshEnabled = false; }
-            else                 { this.RefreshEnabled = true;
-                                   GetListAsync(); }
+            if (_listType == (int) ListViewType.QueryResultList) {
+                this.RefreshEnabled = false;
+            } else { this.RefreshEnabled = true; Task.Run(async () => await GetListAsync()); }
 
-            SearchCommand = new Command(async () =>{
-                if (Query != "" && IsRefreshing == false) { GetListAsync(Query); }
+            ListenToSearchCommand();
+        }
+
+        public void ListenToSearchCommand()
+        {
+            SearchCommand = new Command( async () =>  {
+                if (Query != "" && IsRefreshing == false) { await GetListAsync(Query); }
             });
-    }
+        }
 
-        private async void GetListAsync(string query = "")
+        // Gets appropriate list based on list type requested
+        public async Task GetListAsync(string query = "")
         {
             IsRefreshing = true;
 
@@ -104,6 +112,8 @@ namespace AMDb
 
             IsRefreshing = false;
 
+            // Cant use await quantifier as server interprets
+            // that many requests in short amount of time as DoS attack :(
             UpdateMovieCast();
         }
 
